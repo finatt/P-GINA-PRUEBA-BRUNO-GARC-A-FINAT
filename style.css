@@ -1,0 +1,67 @@
+
+body {
+	color: CRIMSON;
+	background-color: #FFEFD5;
+}
+
+
+footer {
+	color: purple;
+	background-color: #DEB887;
+}
+
+
+.boton {
+    background-color: blue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.boton:hover {
+    background-color: darkblue;
+}
+
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.boton {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.opciones {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 4px 8px gray;
+}
+
+.opciones a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.opciones a:hover {
+    background-color: lightgray;
+}
+
+.menu:hover .opciones {
+    display: block;
+}
+
+
+

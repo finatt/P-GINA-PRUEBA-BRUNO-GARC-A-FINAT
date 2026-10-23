@@ -1,0 +1,33 @@
+.imagen-movil {
+    width: 500px;
+    position: relative;
+    animation: mover 4s infinite alternate ease-in-out;
+}
+
+@keyframes mover {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100vw - 500px);
+    }
+}
+
+@keyframes canvaA {
+    0% { left: 0px; filter: hue-rotate(1deg) }
+    50% { left: 500px; filter: hue-rotate(90deg) }
+    100% { left: 1000px; filter: hue-rotate(180deg) }
+}
+
+#pjsCanvas {
+    display: flex;
+    width: 90px;
+    position: relative;
+    animation: canvaA 25s linear infinite alternate;
+}
+
+#pjsCanvas:hover {
+    animation-play-state: paused;
+    transform: scale(3,3) rotate(45deg);
+}

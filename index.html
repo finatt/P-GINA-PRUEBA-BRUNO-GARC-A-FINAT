@@ -1,0 +1,159 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title> MI PRIMERA WEB</title>
+<link href="icono.ico" rel="icon" /><!--para insertar como icono-->
+<link href= "style.css" rel="stylesheet" type="text/css">
+<link href= "animation.css" rel="stylesheet" type="text/css">
+<BR>
+<script src="processing.js"></script><!-- para insertar un processing-->
+<script type="text/processing" data-processing-target="pjsCanvas">
+void setup(){
+  size(280,70);
+  background(#2E4683);
+  textSize(50);
+}
+void draw(){
+  background(#2E4683);
+  int h= hour();
+  int m=minute();
+  int s=second();
+  text(h+":"+nf(m,2)+":"+nf(s,2),30,50);
+}
+</script>
+</head>
+
+
+<body>
+<img src="condesa.png" alt="condesa" class="imagen-movil">
+<main>
+<center> <font color="GREEN"><big><big><big> FORMATOS </font></big></big></big></center>
+<br><b>"bruno" en negrita</b>
+<br><i>"bruno" en cursiva"</i>
+<br><mark>"bruno" subrayado</mark>
+ 
+</main>
+<font color="green"><big><big><big><center/>LISTAS </font></big></big></big></center>
+
+<div class="sigma123">Tipos de lista numeradas:</div>
+
+<ul>
+<li type="square"> Primera fila de esta nueva lista con cuadrado</li>
+<li type="square"> Segunda fila de esta nueva lista con cuadrado</li>
+<li type="square"> Tercera fila de esta nueva lista con cuadrado</li>
+</ul>
+
+<ul>
+<li type="circle">Primera fila de esta nueva lista con círculo</li>
+<li type="circle"> Segunda fila de esta nueva lista con círculo</li>
+<li type="circle"> Tercera fila de esta nueva lista con círculo</li>
+</ul>
+
+<ul>
+<li type="disc"> Primera fila de esta nueva lista con disco</li>
+<li type="disc"> Segunda fila de esta nueva lista con disco</li>
+<li type="disc"> Tercera fila de esta nueva lista con disco</li>
+</ul>
+ 
+<ol type= "a"><!--aqui se colocaran por defecto en orden alfabetico-->
+<li>Texto para el primer apartado de la lista</li>
+<li>Texto para el segundo apartado de la lista</li>
+<li>Texto para el tercer apartado de la lista</li>
+<li>Texto para el cuaarto apartado de la lista</li>
+</ol>
+
+<ol type="1"><!--aqui se colocaran por defecto en orden numérico-->
+<li>Texto para el primer apartado de la lista</li>
+<li>Texto para el segundo apartado de la lista</li>
+<li>Texto para el tercer apartado de la lista</li>
+<li>Texto para el cuaarto apartado de la lista</li>
+</OL>
+
+<ol type= "I"><!--aqui se colocaran por defecto en números romanos-->
+<li>Texto para el primer apartado de la lista</li>
+<li>Texto para el segundo apartado de la lista</li>
+<li>Texto para el tercer apartado de la lista</li>
+<li>Texto para el cuaarto apartado de la lista</li>
+</OL>
+
+<center> <font color="GREEN"><big><big><big>TABLAS </font></big></big></big></center>
+
+<center>
+<table class= "tabla1">
+<caption>Mi primera tabla en html sin bordes </caption>
+<tr>
+<td> celda 1</td>
+<td> celda 2</td>
+</tr>
+<tr>
+<td> celda 3</td>
+<td> celda 4</td>
+</tr>
+</table>
+</center>
+
+<center> <table border= "1">
+<caption>Mi primera tabla con bordes </caption>
+<tr>
+<td> celda 1</td>
+<td> celda 2</td>E
+<td> celda 4</td>
+</tr>
+</table>
+</center>
+ 
+<center>	
+<table border="1">
+<tr>
+<td colspan=3>celda combinando 3 columnas</td><!-- combina tres celdas de columnas distintas en una.-->
+</tr>
+<tr>
+<td rowspan=2>celda combinando 2</td><!--combina dos celdas de filas distintas en una.-->
+<td>celda normal</td>
+<td>celda normal</td>
+</tr>
+<tr>
+<td>celda normal</td>
+<td>celda normal</td>
+</tr>
+</table>
+</center>
+
+<center><br> <font color="GREEN"><big><big><big> IMAGENES </font></big></big></big></center>
+<center><img src= "etiqueta.png" alt= "mi etiqueta" border="1" align="top"  width="400"> </center>
+
+<center><br> <font color="GREEN"><big><big><big> AUDIOS </font></big></big></big>
+<br>Homero cantando: 
+<audio src="homero.mp3" controls > </audio> </center>
+
+
+
+<center><br> <font color="GREEN"><big><big><big> VIDEOS </font></big></big></big><br>
+<video src="wishkey.mp4" controls > </video></center>
+
+<center><br> <font color="GREEN"><big><big><big> UBICACIONES </font></big></big></big><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1485978.1436590983!2d-5.470384061210653!3d43.328888803113095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e590015afb60d%3A0x2e4ea3fda3f628c6!2sParque%20placentero!5e0!3m2!1ses!2ses!4v1791287466877!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</center>
+
+<center><br> <font color="GREEN"><big><big><big> BOTONES </font></big></big></big><br></center>
+<a href="https://orteil.dashnet.org/cookieclicker" target="_blank"><button class="boton">Cookie clicker</button></a>
+<button class="boton">Botón 2</button>
+<button class="boton">Botón 3</button>
+
+<div class="menu">
+	<button class="boton">Menú ▼</button>
+	<div class="opciones">
+		<a href="inicio.html">Inicio</a>
+		<a href="sobre-mi.html">Sobre mí</a>
+		<a href="contacto.html">Contacto</a>
+	</div>
+</div>
+
+</body>
+
+<footer>
+Esto es el pie de página
+</footer>
+
+</html>
